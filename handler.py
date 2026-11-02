@@ -1019,7 +1019,7 @@ def handler(job):
         endpoint = f"{OLLAMA_BASE_URL}/api/generate"
         payload = {"model": model, "prompt": prompt}
 
-    for key in ("options", "format", "keep_alive", "tools", "system", "template"):
+    for key in ("options", "format", "keep_alive", "tools", "system", "template", "think"):
         if key in job_input:
             payload[key] = job_input[key]
 
