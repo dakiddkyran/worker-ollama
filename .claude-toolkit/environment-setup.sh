@@ -41,6 +41,7 @@ PY
 
 Pick capabilities from the task itself; the user should not have to name plugins.
 Load a skill only when its trigger fits. One owner per concern; never run competing workflows for one task.
+Never ask the user to type slash commands: invoke the matching skill yourself (Skill tool) whenever its trigger fits.
 
 - Dev workflow (plan, TDD, debug, verify): `superpowers`. Multi-file features, bugs, refactors; skip trivial edits.
 - Implementation efficiency: `ponytail` (advisory). Stdlib/platform/existing code first; no needless deps or abstraction.
